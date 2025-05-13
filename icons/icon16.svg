@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <!-- Super simplified search bar -->
+  <rect x="1" y="3" width="7" height="2" rx="1" fill="#f1f3f4" stroke="#4285f4" stroke-width="0.5"/>
+  
+  <!-- Simplified text results (just 3 lines) -->
+  <rect x="1" y="7" width="6" height="0.8" rx="0.4" fill="#5f6368"/>
+  <rect x="1" y="9" width="6" height="0.8" rx="0.4" fill="#5f6368"/>
+  <rect x="1" y="11" width="6" height="0.8" rx="0.4" fill="#5f6368"/>
+  
+  <!-- Separator -->
+  <rect x="9" y="3" width="0.5" height="10" fill="#e0e0e0"/>
+  
+  <!-- Simplified image results (just 3 colored squares) -->
+  <rect x="11" y="3" width="3" height="3" rx="0.5" fill="#de5833" opacity="0.9"/>
+  <rect x="11" y="7" width="3" height="3" rx="0.5" fill="#4285f4" opacity="0.9"/>
+  <rect x="11" y="11" width="3" height="2" rx="0.5" fill="#34a853" opacity="0.9"/>
+</svg>

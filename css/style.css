@@ -1,0 +1,130 @@
+/* style.css - Styles for the image sidebar with theme support */
+
+/* CSS Variables for theming */
+:root {
+  /* Light theme (default) */
+  --vs-bg-color: #f8f9fa;
+  --vs-text-color: #202124;
+  --vs-border-color: #dadce0;
+  --vs-heading-color: #5f6368;
+  --vs-shadow-color: rgba(0, 0, 0, 0.1);
+  --vs-image-border: #e0e0e0;
+  --vs-loading-color: #5f6368;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vs-bg-color: #202124;
+    --vs-text-color: #e8eaed;
+    --vs-border-color: #3c4043;
+    --vs-heading-color: #9aa0a6;
+    --vs-shadow-color: rgba(0, 0, 0, 0.4);
+    --vs-image-border: #3c4043;
+    --vs-loading-color: #9aa0a6;
+  }
+}
+
+/* Sidebar main container */
+#visual-searcher-sidebar {
+  position: fixed;
+  top: 100px; /* Adjust as needed to avoid overlap with Google's header */
+  right: 20px;
+  width: 240px; /* Default width - will be adjustable */
+  max-height: calc(100vh - 120px); /* Max height relative to viewport, minus top/bottom margins */
+  overflow-y: auto;
+  background-color: var(--vs-bg-color);
+  border: 1px solid var(--vs-border-color);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 6px var(--vs-shadow-color);
+  z-index: 9999; /* Ensure it's on top */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--vs-text-color);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  /* Improved scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: var(--vs-border-color) transparent;
+  min-width: 180px; /* Minimum width */
+  max-width: 500px; /* Maximum width */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Sidebar heading */
+#visual-searcher-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--vs-heading-color);
+  border-bottom: 1px solid var(--vs-border-color);
+  padding-bottom: 5px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+/* Images container */
+#visual-searcher-images {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Slightly more spacing between images */
+  padding-right: 4px; /* Add some space for the scrollbar */
+}
+
+/* Loading state */
+#visual-searcher-images.loading {
+  text-align: center;
+  color: var(--vs-loading-color);
+  padding: 20px 0;
+  transition: color 0.3s;
+}
+
+/* Individual image styling */
+#visual-searcher-images img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Limit image height for better scrolling experience */
+  border-radius: 4px;
+  object-fit: cover; /* Cover the area nicely */
+  border: 1px solid var(--vs-image-border);
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+/* Hover effects */
+#visual-searcher-images img:hover {
+  opacity: 0.9;
+  cursor: pointer; /* Indicate clickability */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 3px 5px var(--vs-shadow-color);
+}
+
+/* Handle dark mode for images (slightly dimmed in dark mode for comfort) */
+@media (prefers-color-scheme: dark) {
+  #visual-searcher-images img {
+    filter: brightness(0.9);
+  }
+}
+
+/* Resize handle styles */
+#visual-searcher-resize-handle {
+  position: fixed;
+  top: 100px; /* Match sidebar top position */
+  left: auto; /* Don't set left position directly */
+  width: 10px;
+  height: calc(100vh - 120px); /* Match sidebar max-height */
+  cursor: ew-resize;
+  background: transparent;
+  z-index: 10000;
+  touch-action: none;
+  /* Handle will be positioned via JavaScript */
+}
+
+#visual-searcher-resize-handle:hover,
+#visual-searcher-resize-handle.dragging {
+  background: linear-gradient(to right, transparent, var(--vs-border-color));
+  opacity: 0.5;
+}
+
+/* Show resize cursor on the handle area */
+#visual-searcher-sidebar.resizing {
+  user-select: none;
+  cursor: ew-resize;
+}

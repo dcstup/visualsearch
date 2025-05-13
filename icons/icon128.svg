@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect x="4" y="4" width="120" height="120" rx="16" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+  
+  <!-- Search bar -->
+  <rect x="14" y="30" width="60" height="16" rx="8" fill="#f1f3f4" stroke="#4285f4" stroke-width="2"/>
+  <circle cx="66" cy="38" r="8" fill="#4285f4"/>
+  <path d="M70 42 L74 46" stroke="#4285f4" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Text search results lines -->
+  <rect x="14" y="54" width="50" height="4" rx="2" fill="#5f6368"/>
+  <rect x="14" y="64" width="60" height="4" rx="2" fill="#5f6368"/>
+  <rect x="14" y="74" width="55" height="4" rx="2" fill="#5f6368"/>
+  <rect x="14" y="84" width="58" height="4" rx="2" fill="#5f6368"/>
+  <rect x="14" y="94" width="52" height="4" rx="2" fill="#5f6368"/>
+  
+  <!-- Image sidebar separator -->
+  <rect x="84" y="30" width="2" height="74" fill="#e0e0e0"/>
+  
+  <!-- Image results -->
+  <rect x="94" y="30" width="20" height="16" rx="2" fill="#de5833" opacity="0.8"/>
+  <rect x="94" y="50" width="20" height="16" rx="2" fill="#fbbc05" opacity="0.8"/>
+  <rect x="94" y="70" width="20" height="16" rx="2" fill="#4285f4" opacity="0.8"/>
+  <rect x="94" y="90" width="20" height="16" rx="2" fill="#34a853" opacity="0.8"/>
+  
+
+</svg>
