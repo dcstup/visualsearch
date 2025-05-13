@@ -1,6 +1,6 @@
 # Visual Searcher
 
-A Chrome extension that enhances Google Search with a customizable sidebar displaying relevant image results from DuckDuckGo.
+A Chrome extension that enhances Google Search with a customizable sidebar displaying relevant image results.
 
 ## Features
 
@@ -13,35 +13,37 @@ A Chrome extension that enhances Google Search with a customizable sidebar displ
 
 ## How It Works
 
-When you search on Google, Visual Searcher:
+When you search on Google, Visual Search:
 
 1. Extracts your search query
 2. Fetches relevant images from DuckDuckGo
 3. Displays them in a clean sidebar next to your Google results
 
-The extension runs entirely in your browser - no servers or API keys required.
-
 ## Installation
 
-1. Clone this repository
+### From GitHub Releases
+
+1. Go to the [GitHub Releases page](https://github.com/dcstup/visualsearch/releases)
+2. Download the latest `.crx` file
+3. Double-click the `.crx` file to install it in your default browser (may require Developer mode to be enabled)
+4. Alternatively, if you want to install it in a different browser, or if your default browser is not enabled with Developer mode, follow the instructions below:
+   - Open Chrome or a Chromium-based browser (e.g., Edge, Brave, Vivaldi) and navigate to `chrome://extensions/`
+   - Enable "Developer mode" in the top-right corner
+   - Drag and drop the `.crx` file onto the extensions page
+   - Click "Add extension" when prompted
+
+### From Source Code
+
+1. Clone this repository or download the source ZIP from [Releases](https://github.com/YOUR_USERNAME/visualsearch/releases)
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top-right corner
 4. Click "Load unpacked" and select the repository folder
 5. The extension will be active on Google Search pages
 
-## Technical Details
+### Chrome Web Store
 
-- Built using vanilla JavaScript
-- Uses Chrome Extension Manifest V3
-- Communicates with DuckDuckGo image search to fetch results
-- Responsive design that adapts to user preferences and screen size
+_(Coming soon)_
 
 ## Privacy & Terms of Use
 
-This extension:
-
-- Does not collect any user data
-- Does not use any analytics or tracking
-- Respects Google and DuckDuckGo's terms of service
-
-For detailed information, please see our [Privacy Policy](PRIVACY.md).
+Please see our [Privacy Policy](PRIVACY.md).
