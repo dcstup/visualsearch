@@ -34,7 +34,7 @@ When you search on Google, Visual Search:
 
 ### From Source Code
 
-1. Clone this repository or download the source ZIP from [Releases](https://github.com/YOUR_USERNAME/visualsearch/releases)
+1. Clone this repository
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top-right corner
 4. Click "Load unpacked" and select the repository folder
