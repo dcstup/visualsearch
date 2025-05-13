@@ -6,7 +6,7 @@ A Chrome extension that enhances Google Search with a customizable sidebar displ
 
 - **Real-time Image Results**: Automatically shows relevant images for your Google searches
 - **Theme Support**: Adapts to light and dark mode based on browser settings
-- **Customizable Sidebar**: Resize the sidebar by dragging the left edge to your preference 
+- **Customizable Sidebar**: Resize the sidebar by dragging the left edge to your preference
 - **Memory**: Remembers your preferred sidebar width between sessions
 - **Seamless Integration**: Blends naturally with Google's interface
 - **Privacy-Focused**: Uses DuckDuckGo as the image source
@@ -39,10 +39,9 @@ The extension runs entirely in your browser - no servers or API keys required.
 ## Privacy & Terms of Use
 
 This extension:
+
 - Does not collect any user data
 - Does not use any analytics or tracking
-- Respects DuckDuckGo's terms of service
+- Respects Google and DuckDuckGo's terms of service
 
-## License
-
-[Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](LICENSE)
+For detailed information, please see our [Privacy Policy](PRIVACY.md).
